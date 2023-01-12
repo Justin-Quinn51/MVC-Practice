@@ -10,7 +10,7 @@ module.exports = {
     }
   },
   createItem: async (req, res) => {
-    const newItem = new ItemList({
+    const newItem = new itemList({
       textInput: req.body.textInput,
       numInput: req.body.numInput,
     });

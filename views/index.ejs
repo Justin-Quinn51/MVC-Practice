@@ -16,6 +16,15 @@
       <input type="number" name="numInput" value="0" />
       <button type="submit">Add Item</button>
     </form>
-    <ul></ul>
+    <ul>
+      <% itemList.forEach(item => { %>
+      <li>
+        <div><%= item.textInput %></div>
+        <div><%= item.numInput %></div>
+        <a href="">Edit</a>
+        <a href="">Remove</a>
+      </li>
+      <% }) %>
+    </ul>
   </body>
 </html>
